@@ -1,0 +1,28 @@
+//comparing array contents and sorting
+
+
+package demo.collectionn;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Vector;
+import java.util.stream.Collectors;
+public class collections_Sorting {
+	public static void main(String[] args) {
+			List<Integer> list =Arrays.asList(12,31,2,3);
+//	list.stream().sorted(Comparator.naturalOrder()).forEach(System.out::println);
+//	Collections.sort(list,(e1,e2)->e1.compareTo(e2));
+//	System.out.print(list);
+	
+	ArrayList<Integer> l=new ArrayList<>(Arrays.asList(2,3,4,32,1,2,33));
+	Collections.sort(list,(w1,w2)->w1.compareTo(w2));
+	l.sort((w1,w2)->w1.compareTo(w2));
+	System.out.println(list);	
+	System.out.println(l);
+	}
+	
+}
